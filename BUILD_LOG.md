@@ -1,6 +1,6 @@
 # AI build log: Chat to Checkout
 
-Razorpay x ISB AI PM Build Challenge · Track 1
+Razorpay x ISB AI PM Build Challenge
 **Live prototype:** https://razorpaychattocheckoutkashishjain.vercel.app (opens without a login)
 
 ## The short version
@@ -19,7 +19,7 @@ I took this from an open brief to a live site with a real AI model and real Razo
 - what I decided myself
 - how I checked the result and what is still unproven
 
-My own prompts are quoted word for word, except five early ones (1, 4, 6, 7 and 8). Those came from my first planning chat, which was not saved in full, so I have written each one out completely around the words I actually used. They are marked.
+My own prompts are quoted word for word. Those came from my first planning chat, which was not saved in full, so I have written each one out completely around the words I actually used. They are marked.
 
 | The form asks for | Where to find it |
 |---|---|
