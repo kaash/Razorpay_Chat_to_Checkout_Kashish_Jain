@@ -1,0 +1,56 @@
+{
+  "when": "2026-10-13T11:30:18.446Z",
+  "model": "claude-sonnet-5-5",
+  "via": "https://razorpaychattocheckoutkashishjain.vercel.app",
+  "tally": {
+    "correct": 29,
+    "flagged": 2,
+    "silent": 0
+  },
+  "rows": [
+    [
+      "T1",
+      "intent: ok · item: ok · size: ok · qty: ok · total 2478 · 3924 ms"
+    ],
+    [
+      "T2",
+      "intent: ok · 6135 ms"
+    ],
+    [
+      "T3",
+      "intent: ok · item: ok · size: missing (expected missing) · qty: ok · 3111 ms"
+    ],
+    [
+      "T4",
+      "intent: ok · item: flagged · size: ok · qty: ok · 3093 ms"
+    ],
+    [
+      "T5",
+      "intent: ok · item: ok · size: ok · qty: ok · total 1079 · 3259 ms"
+    ],
+    [
+      "T6",
+      "intent: ok · item: ok · size: ok · qty: ok · price ask: ok · 3646 ms"
+    ],
+    [
+      "T7",
+      "intent: ok · item: ok · size: ok · qty: ok · total 3999 · 2904 ms"
+    ],
+    [
+      "T16",
+      "intent: ok · 3529 ms"
+    ],
+    [
+      "T17",
+      "customers: ok · 3907 ms"
+    ],
+    [
+      "T18",
+      "intent: ok · item: ok · 3346 ms"
+    ],
+    [
+      "T4b",
+      "intent: ok · item: flagged · 3463 ms"
+    ]
+  ]
+}
