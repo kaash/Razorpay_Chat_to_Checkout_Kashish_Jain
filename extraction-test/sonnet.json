@@ -1,0 +1,581 @@
+[
+ {
+  "id": "T1",
+  "intent": "agreed",
+  "intent_quote": "ok done, bhej do link",
+  "intent_confidence": 0.95,
+  "multiple_customers": false,
+  "items": [
+   {
+    "mention": "blue wala",
+    "candidates": [
+     {
+      "item_id": "MT-KUR-014",
+      "score": 0.97
+     },
+     {
+      "item_id": "MT-KUR-016",
+      "score": 0.1
+     }
+    ],
+    "not_found": false,
+    "size": {
+     "value": "M",
+     "quote": "M size me hai",
+     "confidence": 0.95
+    },
+    "qty": {
+     "value": 2,
+     "quote": "2 chahiye",
+     "confidence": 0.95
+    }
+   }
+  ],
+  "price_requested": null,
+  "missing": []
+ },
+ {
+  "id": "T2",
+  "intent": "question",
+  "intent_quote": "Is the blue kurti available? price kya hai?",
+  "intent_confidence": 0.95,
+  "multiple_customers": false,
+  "items": [
+   {
+    "mention": "blue kurti",
+    "candidates": [
+     {
+      "item_id": "MT-KUR-014",
+      "score": 0.6
+     },
+     {
+      "item_id": "MT-KUR-016",
+      "score": 0.35
+     }
+    ],
+    "not_found": false,
+    "size": {
+     "value": null,
+     "quote": null,
+     "confidence": 0
+    },
+    "qty": {
+     "value": null,
+     "quote": null,
+     "confidence": 0
+    }
+   }
+  ],
+  "price_requested": null,
+  "missing": [
+   "size",
+   "qty"
+  ]
+ },
+ {
+  "id": "T3",
+  "intent": "agreed",
+  "intent_quote": "black co-ord set chahiye. Ahmedabad bhejna hai. link bhejo",
+  "intent_confidence": 0.85,
+  "multiple_customers": false,
+  "items": [
+   {
+    "mention": "black co-ord set",
+    "candidates": [
+     {
+      "item_id": "MT-COR-003",
+      "score": 0.95
+     }
+    ],
+    "not_found": false,
+    "size": {
+     "value": null,
+     "quote": null,
+     "confidence": 0
+    },
+    "qty": {
+     "value": null,
+     "quote": null,
+     "confidence": 0
+    }
+   }
+  ],
+  "price_requested": null,
+  "missing": [
+   "size",
+   "qty"
+  ]
+ },
+ {
+  "id": "T4",
+  "intent": "agreed",
+  "intent_quote": "done, link bhejo",
+  "intent_confidence": 0.95,
+  "multiple_customers": false,
+  "items": [
+   {
+    "mention": "blue bandhani",
+    "candidates": [
+     {
+      "item_id": "MT-KUR-014",
+      "score": 0.9
+     },
+     {
+      "item_id": "MT-KUR-016",
+      "score": 0.15
+     }
+    ],
+    "not_found": false,
+    "size": {
+     "value": "L",
+     "quote": "L size",
+     "confidence": 0.97
+    },
+    "qty": {
+     "value": 1,
+     "quote": "1 piece",
+     "confidence": 0.97
+    }
+   }
+  ],
+  "price_requested": null,
+  "missing": []
+ },
+ {
+  "id": "T5",
+  "intent": "agreed",
+  "intent_quote": "ok link bhejo",
+  "intent_confidence": 0.93,
+  "multiple_customers": false,
+  "items": [
+   {
+    "mention": "white kurti",
+    "candidates": [
+     {
+      "item_id": "MT-KUR-030",
+      "score": 0.97
+     }
+    ],
+    "not_found": false,
+    "size": {
+     "value": "L",
+     "quote": "L size",
+     "confidence": 0.95
+    },
+    "qty": {
+     "value": 1,
+     "quote": "1 hi chahiye",
+     "confidence": 0.95
+    }
+   }
+  ],
+  "price_requested": null,
+  "missing": []
+ },
+ {
+  "id": "T6",
+  "intent": "agreed",
+  "intent_quote": "ok then link bhejo",
+  "intent_confidence": 0.7,
+  "multiple_customers": false,
+  "items": [
+   {
+    "mention": "Blue Bandhani Kurti (shared reel)",
+    "candidates": [
+     {
+      "item_id": "MT-KUR-014",
+      "score": 0.97
+     }
+    ],
+    "not_found": false,
+    "size": {
+     "value": "M",
+     "quote": "M size",
+     "confidence": 0.95
+    },
+    "qty": {
+     "value": 2,
+     "quote": "di 2 le rahi hoon",
+     "confidence": 0.95
+    }
+   }
+  ],
+  "price_requested": {
+   "value": 1100,
+   "quote": "1,100 each kar do na"
+  },
+  "missing": []
+ },
+ {
+  "id": "T7",
+  "intent": "agreed",
+  "intent_quote": "ek maroon Banarasi saree chahiye, Mumbai bhejna hai, link bhej do please",
+  "intent_confidence": 0.93,
+  "multiple_customers": false,
+  "items": [
+   {
+    "mention": "maroon Banarasi saree",
+    "candidates": [
+     {
+      "item_id": "MT-SAR-005",
+      "score": 0.98
+     }
+    ],
+    "not_found": false,
+    "size": {
+     "value": "Free",
+     "quote": "maroon Banarasi saree",
+     "confidence": 0.9
+    },
+    "qty": {
+     "value": 1,
+     "quote": "ek maroon Banarasi saree",
+     "confidence": 0.95
+    }
+   }
+  ],
+  "price_requested": null,
+  "missing": []
+ },
+ {
+  "id": "T10",
+  "intent": "change",
+  "intent_quote": "ek blue ki jagah navy bhej do na, same size",
+  "intent_confidence": 0.9,
+  "multiple_customers": false,
+  "items": [
+   {
+    "mention": "blue (remaining from paid order)",
+    "candidates": [
+     {
+      "item_id": "MT-KUR-014",
+      "score": 0.95
+     }
+    ],
+    "not_found": false,
+    "size": {
+     "value": "M",
+     "quote": "same size",
+     "confidence": 0.85
+    },
+    "qty": {
+     "value": 1,
+     "quote": "ek blue ki jagah",
+     "confidence": 0.6
+    }
+   },
+   {
+    "mention": "navy",
+    "candidates": [
+     {
+      "item_id": "MT-KUR-016",
+      "score": 0.95
+     }
+    ],
+    "not_found": false,
+    "size": {
+     "value": "M",
+     "quote": "same size",
+     "confidence": 0.85
+    },
+    "qty": {
+     "value": 1,
+     "quote": "ek blue ki jagah navy",
+     "confidence": 0.6
+    }
+   }
+  ],
+  "price_requested": null,
+  "missing": []
+ },
+ {
+  "id": "T11",
+  "intent": "change",
+  "intent_quote": "saree ki jagah black co-ord M bhej do",
+  "intent_confidence": 0.93,
+  "multiple_customers": false,
+  "items": [
+   {
+    "mention": "black co-ord",
+    "candidates": [
+     {
+      "item_id": "MT-COR-003",
+      "score": 0.95
+     }
+    ],
+    "not_found": false,
+    "size": {
+     "value": "M",
+     "quote": "black co-ord M",
+     "confidence": 0.95
+    },
+    "qty": {
+     "value": 1,
+     "quote": "saree ki jagah",
+     "confidence": 0.7
+    }
+   }
+  ],
+  "price_requested": null,
+  "missing": []
+ },
+ {
+  "id": "T12",
+  "intent": "return",
+  "intent_quote": "1 blue kurti return karna hai",
+  "intent_confidence": 0.97,
+  "multiple_customers": false,
+  "items": [
+   {
+    "mention": "blue kurti",
+    "candidates": [
+     {
+      "item_id": "MT-KUR-014",
+      "score": 0.93
+     },
+     {
+      "item_id": "MT-KUR-016",
+      "score": 0.07
+     }
+    ],
+    "not_found": false,
+    "size": {
+     "value": "M",
+     "quote": "context_paid_order: MT-KUR-014 size M",
+     "confidence": 0.8
+    },
+    "qty": {
+     "value": 1,
+     "quote": "1 blue kurti",
+     "confidence": 0.95
+    }
+   }
+  ],
+  "price_requested": null,
+  "missing": []
+ },
+ {
+  "id": "T13",
+  "intent": "return",
+  "intent_quote": "1 blue kurti return karna hai",
+  "intent_confidence": 0.97,
+  "multiple_customers": false,
+  "items": [
+   {
+    "mention": "blue kurti",
+    "candidates": [
+     {
+      "item_id": "MT-KUR-014",
+      "score": 0.93
+     },
+     {
+      "item_id": "MT-KUR-016",
+      "score": 0.07
+     }
+    ],
+    "not_found": false,
+    "size": {
+     "value": "M",
+     "quote": "context_paid_order: MT-KUR-014 size M",
+     "confidence": 0.8
+    },
+    "qty": {
+     "value": 1,
+     "quote": "1 blue kurti",
+     "confidence": 0.95
+    }
+   }
+  ],
+  "price_requested": null,
+  "missing": []
+ },
+ {
+  "id": "T14",
+  "intent": "return",
+  "intent_quote": "Refund chahiye mujhe",
+  "intent_confidence": 0.8,
+  "multiple_customers": false,
+  "items": [],
+  "price_requested": null,
+  "missing": [
+   "items"
+  ]
+ },
+ {
+  "id": "T15",
+  "intent": "change",
+  "intent_quote": "Ek white kurti M bhi add kar do",
+  "intent_confidence": 0.95,
+  "multiple_customers": false,
+  "items": [
+   {
+    "mention": "blue kurti (existing paid order)",
+    "candidates": [
+     {
+      "item_id": "MT-KUR-014",
+      "score": 0.97
+     }
+    ],
+    "not_found": false,
+    "size": {
+     "value": "M",
+     "quote": "context_paid_order: MT-KUR-014 size M",
+     "confidence": 0.95
+    },
+    "qty": {
+     "value": 2,
+     "quote": "context_paid_order: MT-KUR-014 qty 2",
+     "confidence": 0.95
+    }
+   },
+   {
+    "mention": "white kurti",
+    "candidates": [
+     {
+      "item_id": "MT-KUR-030",
+      "score": 0.97
+     }
+    ],
+    "not_found": false,
+    "size": {
+     "value": "M",
+     "quote": "white kurti M",
+     "confidence": 0.95
+    },
+    "qty": {
+     "value": 1,
+     "quote": "Ek white kurti",
+     "confidence": 0.95
+    }
+   }
+  ],
+  "price_requested": null,
+  "missing": []
+ },
+ {
+  "id": "T16",
+  "intent": "unclear",
+  "intent_quote": "ok",
+  "intent_confidence": 0.9,
+  "multiple_customers": false,
+  "items": [],
+  "price_requested": null,
+  "missing": [
+   "items"
+  ]
+ },
+ {
+  "id": "T17",
+  "intent": "agreed",
+  "intent_quote": "ok link bhejo",
+  "intent_confidence": 0.7,
+  "multiple_customers": true,
+  "items": [
+   {
+    "mention": "white kurti (Ritu)",
+    "candidates": [
+     {
+      "item_id": "MT-KUR-030",
+      "score": 0.97
+     }
+    ],
+    "not_found": false,
+    "size": {
+     "value": "M",
+     "quote": "2 white kurti M",
+     "confidence": 0.95
+    },
+    "qty": {
+     "value": 2,
+     "quote": "2 white kurti M",
+     "confidence": 0.95
+    }
+   },
+   {
+    "mention": "black co-ord (Sana)",
+    "candidates": [
+     {
+      "item_id": "MT-COR-003",
+      "score": 0.97
+     }
+    ],
+    "not_found": false,
+    "size": {
+     "value": "L",
+     "quote": "1 black co-ord L",
+     "confidence": 0.95
+    },
+    "qty": {
+     "value": 1,
+     "quote": "mujhe 1 black co-ord L",
+     "confidence": 0.95
+    }
+   }
+  ],
+  "price_requested": null,
+  "missing": []
+ },
+ {
+  "id": "T18",
+  "intent": "agreed",
+  "intent_quote": "link bhejo",
+  "intent_confidence": 0.75,
+  "multiple_customers": false,
+  "items": [
+   {
+    "mention": "Mustard dupatta",
+    "candidates": [],
+    "not_found": true,
+    "size": {
+     "value": null,
+     "quote": null,
+     "confidence": 0
+    },
+    "qty": {
+     "value": 1,
+     "quote": "Mustard dupatta 1",
+     "confidence": 0.9
+    }
+   }
+  ],
+  "price_requested": null,
+  "missing": [
+   "size"
+  ]
+ },
+ {
+  "id": "T4b",
+  "intent": "agreed",
+  "intent_quote": "done, link bhejo",
+  "intent_confidence": 0.9,
+  "multiple_customers": false,
+  "items": [
+   {
+    "mention": "wo blue wala kurti",
+    "candidates": [
+     {
+      "item_id": "MT-KUR-014",
+      "score": 0.7
+     },
+     {
+      "item_id": "MT-KUR-016",
+      "score": 0.25
+     }
+    ],
+    "not_found": false,
+    "size": {
+     "value": "L",
+     "quote": "L size",
+     "confidence": 0.97
+    },
+    "qty": {
+     "value": 1,
+     "quote": "1 piece",
+     "confidence": 0.97
+    }
+   }
+  ],
+  "price_requested": null,
+  "missing": []
+ }
+]

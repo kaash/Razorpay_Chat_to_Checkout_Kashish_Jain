@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.vercel/
+test-results/
+*.log
+.DS_Store
+extraction-test/eval-mock.json
