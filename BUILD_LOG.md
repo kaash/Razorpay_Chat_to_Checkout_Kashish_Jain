@@ -1,7 +1,5 @@
 # AI build log: Chat to Checkout
 
-> Draft prepared with Claude. Items in [square brackets] are for me to confirm or fill in before submitting. No keys, credentials or personal data appear here.
-
 ## 1. Tools and models
 | Tool / model | What I used it for |
 |---|---|
