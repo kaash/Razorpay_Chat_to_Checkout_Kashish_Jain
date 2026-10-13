@@ -9,7 +9,6 @@ Razorpay x ISB AI PM Build Challenge, Track 1 ("Razorpay in Your Pocket").
 |---|---|
 | **Live prototype** (no login) | https://razorpaychattocheckoutkashishjain.vercel.app |
 | **AI build log** | [BUILD_LOG.md](BUILD_LOG.md) |
-| **How the idea was chosen and challenged** | [docs/decision-trail.md](docs/decision-trail.md) |
 | **No-server version** | [submission/prototype-standalone.html](submission/prototype-standalone.html) (download and open; rules in the browser, simulated payments) |
 
 ![The prototype: who does what at each step on top, the seller's phone in the middle, and what happens behind the screen on the right](docs/img/hero.png)
@@ -95,7 +94,7 @@ AI appears in **one** step: reading the chat. The money, the link, the reply and
   - few real screenshots
   - overlap with RAY not checked on an activated account
 
-  Details are in [BUILD_LOG.md §5](BUILD_LOG.md#5-known-limitations-risks-and-verification-steps).
+  Details are in [BUILD_LOG.md §5](BUILD_LOG.md#5-limitations-risks-and-how-i-verified).
 
 ## How it's built
 - **The page:** one HTML file with no framework (`frontend/src` → `public/index.html`).
@@ -137,8 +136,7 @@ npm run eval             # F1 cases through the real model + code checks
 ## Repo map
 | Path | What's there |
 |---|---|
-| `BUILD_LOG.md` | The AI build log |
-| `docs/decision-trail.md` | Ideas I killed, claims I challenged, review points I accepted or rejected, in my own words |
+| `BUILD_LOG.md` | The AI build log: how I found the problem, my prompts, the ideas I rejected, what AI got wrong, and how I verified it |
 | `docs/solution-document-v9.md` | The full product thinking: merchant, evidence, flows, decisions, metrics, impact |
 | `docs/prototype-spec.md` | The written spec the prototype was built and tested against |
 | `docs/agent-handoff.md` | The brief and hard rules given to the deploy agent (Claude Code) |
