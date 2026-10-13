@@ -1,0 +1,192 @@
+{
+ "T1": {
+  "intent": "agreed",
+  "items": [
+   [
+    "MT-KUR-014",
+    "M",
+    2
+   ]
+  ],
+  "price_requested": null,
+  "special": null
+ },
+ "T2": {
+  "intent": "question",
+  "items": null,
+  "price_requested": null,
+  "special": null
+ },
+ "T3": {
+  "intent": "agreed",
+  "items": [
+   [
+    "MT-COR-003",
+    null,
+    1
+   ]
+  ],
+  "price_requested": null,
+  "special": "size_missing"
+ },
+ "T4": {
+  "intent": "agreed",
+  "items": [
+   [
+    "MT-KUR-014",
+    "L",
+    1
+   ]
+  ],
+  "price_requested": null,
+  "special": "label_revised"
+ },
+ "T5": {
+  "intent": "agreed",
+  "items": [
+   [
+    "MT-KUR-030",
+    "L",
+    1
+   ]
+  ],
+  "price_requested": null,
+  "special": "changed_in_chat"
+ },
+ "T6": {
+  "intent": "agreed",
+  "items": [
+   [
+    "MT-KUR-014",
+    "M",
+    2
+   ]
+  ],
+  "price_requested": 1100,
+  "special": "price_request"
+ },
+ "T7": {
+  "intent": "agreed",
+  "items": [
+   [
+    "MT-SAR-005",
+    "Free",
+    1
+   ]
+  ],
+  "price_requested": null,
+  "special": null
+ },
+ "T10": {
+  "intent": "change",
+  "items": [
+   [
+    "MT-KUR-014",
+    "M",
+    1
+   ],
+   [
+    "MT-KUR-016",
+    "M",
+    1
+   ]
+  ],
+  "price_requested": null,
+  "special": null
+ },
+ "T11": {
+  "intent": "change",
+  "items": [
+   [
+    "MT-COR-003",
+    "M",
+    1
+   ]
+  ],
+  "price_requested": null,
+  "special": null
+ },
+ "T12": {
+  "intent": "return",
+  "items": [
+   [
+    "MT-KUR-014",
+    "M",
+    1
+   ]
+  ],
+  "price_requested": null,
+  "special": null
+ },
+ "T13": {
+  "intent": "return",
+  "items": [
+   [
+    "MT-KUR-014",
+    "M",
+    1
+   ]
+  ],
+  "price_requested": null,
+  "special": "outside_window_code"
+ },
+ "T14": {
+  "intent": "return",
+  "items": null,
+  "price_requested": null,
+  "special": "no_paid_order_code"
+ },
+ "T15": {
+  "intent": "change",
+  "items": [
+   [
+    "MT-KUR-014",
+    "M",
+    2
+   ],
+   [
+    "MT-KUR-030",
+    "M",
+    1
+   ]
+  ],
+  "price_requested": null,
+  "special": null
+ },
+ "T16": {
+  "intent": "unclear",
+  "items": null,
+  "price_requested": null,
+  "special": null
+ },
+ "T17": {
+  "intent": "agreed",
+  "items": null,
+  "price_requested": null,
+  "special": "multiple_customers"
+ },
+ "T18": {
+  "intent": "agreed",
+  "items": [
+   [
+    "NOT_FOUND",
+    null,
+    1
+   ]
+  ],
+  "price_requested": null,
+  "special": "item_not_found"
+ },
+ "T4b": {
+  "intent": "agreed",
+  "items": [
+   [
+    "AMBIG",
+    "L",
+    1
+   ]
+  ],
+  "price_requested": null,
+  "special": "ambiguous_item"
+ }
+}

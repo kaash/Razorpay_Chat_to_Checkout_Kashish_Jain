@@ -1,0 +1,146 @@
+<body>
+<div id="app">
+  <header id="hdr">
+    <div class="brand" aria-label="Razorpay, Chat to Checkout, concept">
+      <svg viewBox="0 0 24 24" aria-hidden="true" width="24" height="24"><path fill="#3395FF" d="M22.436 0l-11.91 7.773-1.174 4.276 6.625-4.297L11.65 24h4.391l6.395-24z"/><path fill="#0C2451" d="M14.26 10.098L3.389 17.166 1.564 24h9.008l3.688-13.902Z"/></svg>
+      <span class="wm">Razorpay</span><span class="sep" aria-hidden="true"></span><span class="pn">Chat to Checkout</span><span class="cn">· concept</span>
+    </div>
+    <div class="seg" role="tablist" aria-label="Mode">
+      <button role="tab" id="tab-demo" aria-selected="true" aria-controls="main" data-tab="demo">Sample demo</button>
+      <button role="tab" id="tab-live" aria-selected="false" aria-controls="main" data-tab="live">Try it live</button>
+    </div>
+    <div class="seg ch" role="group" aria-label="Chat app">
+      <button aria-pressed="true" data-ch="instagram"><span class="d"></span>Instagram</button>
+      <button aria-pressed="false" data-ch="whatsapp"><span class="d"></span>WhatsApp</button>
+    </div>
+    <div class="hbtns">
+      <button class="hb" id="b-guide">Guide</button>
+      <button class="hb" id="b-cmp">Today vs new</button>
+      <button class="hb" id="b-restart">Restart</button>
+      <button class="hb" id="b-phone" aria-pressed="false">Phone only</button>
+      <span class="pill hc" title="Concept prototype of a proposed Razorpay feature · not an official Razorpay product · sample data · no real money moves">Concept · sample data</span>
+    </div>
+  </header>
+
+  <section id="prob" aria-label="The problem">
+    <p><b>The problem:</b> When a buyer says "ok, send the link" in a DM, the seller still copies the order into Razorpay by hand: item, size, quantity, price, delivery, then a reply. It's slow, and easy to get wrong when the chat changed halfway.</p>
+    <div class="facts">
+      <span class="fact">Who: small Instagram &amp; WhatsApp sellers already on Razorpay</span>
+      <span class="fact">Job: send the right payment request from the chat</span>
+      <span class="fact">Target: under 1 minute, capture → send</span>
+    </div>
+    <button class="xbtn" id="b-prob-hide" aria-label="Hide the problem statement">Hide</button>
+  </section>
+
+  <section id="lane" aria-label="Who does what at each step">
+    <div class="ln-wrap">
+      <div class="ln-scroll"><div class="ln-map" id="ln-map"></div></div>
+      <div class="ln-side">
+        <button class="xbtn" id="b-compact" aria-pressed="false">Collapse</button>
+        <button class="xbtn" id="b-prob-show" hidden>Show problem</button>
+        <button class="xbtn" id="b-lane-close" hidden aria-label="Close the journey">Close</button>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <div id="stage">
+      <div id="phoneCol">
+        <div class="whose" id="whose"><i></i><span>Meera's phone</span></div>
+        <div id="phoneWrap"><div id="phone"><div class="notch" aria-hidden="true"></div><div id="screen" aria-live="polite"></div><div class="homebar" id="homebar" aria-hidden="true"></div></div></div>
+      </div>
+      <aside id="side" aria-label="Step guide"></aside>
+    </div>
+    <aside id="flow" aria-label="Behind the screen">
+      <div class="fl-head">
+        <div style="min-width:0"><span class="ey" id="fl-ey">Behind the screen</span><h2 id="fl-title" class="ell">Behind step 1 of 8</h2></div>
+        <span class="stat idle" id="fl-stat">Ready</span>
+        <button class="fl-close" id="b-flow-close" aria-label="Close behind the screen">×</button>
+      </div>
+      <div id="fl-map"></div>
+      <div class="fl-cap" id="fl-cap" aria-live="polite"></div>
+      <div class="fl-json" id="fl-json">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px">
+          <button class="xbtn" id="b-json" aria-expanded="false">Show JSON</button>
+          <button class="xbtn" id="b-json-copy" hidden>Copy JSON</button>
+        </div>
+        <pre id="json-out" hidden></pre>
+      </div>
+      <div class="fl-tick" id="fl-tick" aria-label="Live log"></div>
+      <div class="fl-key" aria-label="Legend">
+        <span><i style="background:#FFF0E3;border-color:#C2570C"></i>Seller</span>
+        <span><i style="background:#F1EBFF;border-color:#6B46C1"></i>AI model</span>
+        <span><i style="background:#E8F0FF;border-color:#1D5FC4"></i>Plain code</span>
+        <span><i style="background:#E2F5F3;border-color:#0F7A73"></i>Data</span>
+        <span><i style="background:#F4F6FA;border-color:#8593A8;border-style:dashed"></i>Outside Razorpay</span>
+        <span><i style="background:#0C2451;border-color:#0C2451"></i>Result</span>
+      </div>
+    </aside>
+  </main>
+</div>
+
+<button class="btn fab" id="b-fab">Behind the screen</button>
+<div class="mbar"><button class="btn sec" id="b-m-lane">Journey</button><button class="btn" id="b-m-flow">Behind the screen</button></div>
+<div class="shade" id="shade"></div>
+
+<div class="ov" id="ov-intro" role="dialog" aria-modal="true" aria-labelledby="in-t">
+  <div class="md">
+    <button class="x" data-close aria-label="Close">×</button>
+    <span class="ey">Concept prototype · Razorpay mobile app</span>
+    <h2 id="in-t">Turn an agreed chat into a correct Razorpay payment request</h2>
+    <p>Meera sells kurtis on Instagram and WhatsApp and already uses Razorpay Payment Links. When a buyer says "ok done, bhej do link", Meera still carries the order across by hand: item, size, quantity, price, delivery, then a reply. Mistakes creep in when the chat changed halfway.</p>
+    <p><b>Chat to Checkout</b> lets her share just that chat. AI suggests the order and shows where each detail came from. Plain code prices it from her own list. She checks one card, a standard Payment Link is created, and the reply is copied for her to send. The AI never sets money and never sends anything.</p>
+    <div class="facts"><span class="fact">Who: small Instagram &amp; WhatsApp sellers already on Razorpay</span><span class="fact">Job: send the right payment request from the chat</span><span class="fact">Target: under 1 minute, capture → send</span></div>
+    <div class="in-map">
+      <div class="in-card"><div class="ill" id="ill1"></div><b>1. Top: who does what</b><p>Each step, split by buyer, seller, AI and Razorpay. The blue band moves as the order moves.</p></div>
+      <div class="in-card"><div class="ill" id="ill2"></div><b>2. Middle: the Razorpay app</b><p>Tap through it like the seller would. Orange outlines show what to tap.</p></div>
+      <div class="in-card"><div class="ill" id="ill3"></div><b>3. Right: behind the screen</b><p>What happens out of sight, and which parts are AI versus plain code.</p></div>
+    </div>
+    <div class="keyrow" aria-label="Colour key">
+      <span><i style="background:#FFF0E3;border-color:#C2570C"></i>Seller</span>
+      <span><i style="background:#F1EBFF;border-color:#6B46C1"></i>AI model</span>
+      <span><i style="background:#E8F0FF;border-color:#1D5FC4"></i>Plain code</span>
+      <span><i style="background:#E2F5F3;border-color:#0F7A73"></i>Data</span>
+      <span><i style="background:#F4F6FA;border-color:#8593A8;border-style:dashed"></i>Outside Razorpay</span>
+      <span><i style="background:#0C2451;border-color:#0C2451"></i>Result</span>
+    </div>
+    <div class="nav"><button class="btn" id="b-in-demo">Watch the sample demo</button><button class="btn sec" id="b-in-live">Try it with your own chat</button></div>
+    <p class="foot">Concept prototype of a proposed Razorpay feature. Not an official Razorpay product. Sample data. No real payments.</p>
+  </div>
+</div>
+
+<div class="ov" id="ov-recap" role="dialog" aria-modal="true" aria-labelledby="rc-t">
+  <div class="md">
+    <button class="x" data-close aria-label="Close">×</button>
+    <span class="ey">Sample demo · 3 orders</span>
+    <h2 id="rc-t">What just happened</h2>
+    <div class="cols3">
+      <div class="col" style="background:#FFF0E3"><h3 style="color:#8a3a07">The seller did</h3><ul><li>captured the chat</li><li>checked one card</li><li>made 2 calls the AI couldn't</li><li>sent the link</li></ul></div>
+      <div class="col" style="background:#F1EBFF"><h3 style="color:#4f2fa0">AI did</h3><ul><li>read the chat</li><li>linked each detail to its words</li><li>flagged what was unclear</li></ul></div>
+      <div class="col" style="background:#E8F0FF"><h3 style="color:#16469a">Code and Razorpay did</h3><ul><li>priced from her list</li><li>added up in paise</li><li>created the link</li><li>reported Paid / Unpaid</li></ul></div>
+    </div>
+    <div class="rrow"><b>What we left out on purpose</b><span>Auto-sending, reminders that send themselves, returns and exchanges (next), address collection, inventory.</span></div>
+    <div class="rrow"><b>How we'll know it works</b><span>Median 60 seconds or less from capture to send, at least 30% faster than her fastest current method, with no more wrong requests or buyer questions. These are targets, not results.</span></div>
+    <div class="rrow"><b>What we've tested</b><span>11 sample chats through two Claude models: after one rule fix, no silent errors and every amount right. Text only; real screenshots still to test.</span></div>
+    <div class="nav"><button class="btn" id="b-rc-live">Try it with your own chat</button><button class="btn sec" id="b-rc-again">Watch again</button></div>
+  </div>
+</div>
+
+<div class="ov" id="ov-cmp" role="dialog" aria-modal="true" aria-labelledby="cm-t">
+  <div class="md">
+    <button class="x" data-close aria-label="Close">×</button>
+    <span class="ey">Today vs new</span>
+    <h2 id="cm-t">How Meera collects for a chat order today, and with Chat to Checkout</h2>
+    <div class="tbl-wrap"><table class="cmp" id="cmp-table"></table></div>
+    <p>Each of today's methods is a sensible trade-off. A personal QR is quick and free for the seller. We're testing whether this saves effort on orders that changed or have several items.</p>
+  </div>
+</div>
+
+<div class="ov" id="ov-test" role="dialog" aria-modal="true" aria-labelledby="ts-t">
+  <div class="md testpanel">
+    <button class="x" data-close aria-label="Close">×</button>
+    <span class="ey">?test=1</span>
+    <h2 id="ts-t">Live parser acceptance tests</h2>
+    <div id="test-out"></div>
+  </div>
+</div>
