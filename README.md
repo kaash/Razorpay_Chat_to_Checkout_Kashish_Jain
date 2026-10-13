@@ -4,7 +4,8 @@
 
 Built for the Razorpay x ISB AI PM Build Challenge, Track 1 ("Razorpay in Your Pocket").
 
-- **Live prototype:** [LIVE_URL] (opens without a login)
+- **Live prototype:** https://razorpaychattocheckoutkashishjain.vercel.app (opens without a login)
+- **Code:** https://github.com/kaash/Razorpay_Chat_to_Checkout_Kashish_Jain
 - **AI build log:** [BUILD_LOG.md](BUILD_LOG.md)
 - **No-server version:** [`submission/prototype-standalone.html`](submission/prototype-standalone.html) (download and open; rules in the browser, simulated payments)
 
@@ -69,7 +70,7 @@ Before building the UI, I ran 17 synthetic Hinglish/English chats through two Cl
 - After adding one code rule (the colour-ambiguity rule), there were **0 silent errors**, and every money amount was right.
 - The test used text representations of images and voice notes. Real screenshots are tested live on the hosted site.
 
-Live re-run on the deployed model: [DATE] · [MODEL] · [N] F1 cases · [X] silent errors (`npm run eval`).
+Live re-run on the deployed model: 13 Oct 2026 · `claude-sonnet-5-5` · 11 F1 cases · 29 fields correct and accepted, 2 flagged for the seller, **0 silent errors** · about 3–6 s per draft (`npm run eval -- --remote <url>`, through the hosted `/api/draft`).
 
 ## Run it yourself
 ```bash
@@ -79,6 +80,7 @@ npm run dev:mock         # http://localhost:3000 with a mock model and mock paym
 cp .env.example .env     # add your own Claude key and Razorpay TEST keys
 npm run dev              # the real thing, locally
 npm run eval             # F1 cases through the real model + code checks
+npm run eval -- --remote https://<your-deploy>   # same, through a deployed /api/draft
 ```
 
 ## What I left out on purpose
