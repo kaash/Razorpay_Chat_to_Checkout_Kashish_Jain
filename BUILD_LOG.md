@@ -1,7 +1,5 @@
 # AI build log: Chat to Checkout
 
-> Prepared with Claude and checked by me. No keys, credentials or personal data appear here.
-
 ## 1. Tools and models
 | Tool / model | What I used it for |
 |---|---|
