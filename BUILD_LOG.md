@@ -10,7 +10,7 @@ This log covers how I used AI from the first idea to the live demo, including th
 |---|---|
 | Claude on claude.ai (Opus-class model) | My main thinking partner. Research on Razorpay's current products, generating and killing ideas, the solution document (9 versions), the prototype spec, the HTML prototype and the server code |
 | Claude Haiku and Claude Sonnet, run as separate agents | The extraction test: both read the same 17 synthetic chats, without seeing my expected answers |
-| ChatGPT, Soul 6, Astra Light and Astra Medium | Outside reviewers for the solution document. I wanted critics that weren't the model that helped me write it |
+| ChatGPT (Sol6), Astra Light and Astra Medium | Outside reviewers for the solution document. I wanted critics that weren't the model that helped me write it |
 | Claude Code | Taking the finished folder to a public repo and a live Vercel deploy, checking the API code against current docs, and running the live evaluation and checks |
 | `claude-sonnet-5-5` (inside the live prototype) | Reads the pasted chat or screenshot on the server and proposes the order fields, each with a quote |
 | Playwright with headless Chromium | Screenshots at 32 screen sizes and end-to-end runs of every path, first in mock mode and then on the live site |
